@@ -1,0 +1,36 @@
+body{
+	overflow-x: hidden;
+
+}
+header{
+	background: withe;
+}
+nav{
+	background: #32dbc6;
+}
+section{
+	background: #6c5b7b;
+}
+footer{
+	background: #009999;
+}
+/*header*/
+.ico-fab{
+	width:20px;
+	height: 20px;
+}
+#logo-princ{
+	width: 250px;
+	height: 130px;
+	margin-top: 10px;
+}
+#banner-d{
+	position: absolute;
+	display: inline-block;
+	vertical-align: top;
+	left: 85%;
+}
+.btn-princ{
+
+	border-radius: 0px 0px 10px 10px;
+}
