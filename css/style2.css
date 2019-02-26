@@ -1,36 +1,96 @@
+/*
+COLORES:
+1) AZUL FUERTE: #074f73;
+2) AZUL BAJO: #06A3D3;
+3) VERDE AQUA: #3FDB9D;
+4) NEGRO: #000000;
+5) HUESO: #EDF5E0;
+6) BLANCO: #FFFFFF;
+ */
+
+/*Lineas generales*/
+.list-none{
+	text-decoration: none;
+}
+*{
+	margin: 0;
+}
+
+
+/*END Lineas generales*/
 body{
 	overflow-x: hidden;
 
 }
 header{
-	background: withe;
+	background: #FFFFFF;
+	height: 170px;
+	margin-bottom: 10px;
 }
 nav{
 	background: #32dbc6;
 }
 section{
 	background: #6c5b7b;
+	height: 900px;
+	margin-left: 8px;
+	margin-right: 8px;
 }
 footer{
 	background: #009999;
+	height: 170px;
 }
 /*header*/
-.ico-fab{
-	width:20px;
-	height: 20px;
-}
+
 #logo-princ{
 	width: 250px;
-	height: 130px;
+	height: 150px;
 	margin-top: 10px;
 }
 #banner-d{
 	position: absolute;
 	display: inline-block;
 	vertical-align: top;
-	left: 85%;
+	left: 62%;
+	width: 500px;
+	height: 150px;
+	/*border: black 1px solid;*/
 }
-.btn-princ{
 
+#btn-princ{
+	background: #074f73;
+	color: #ffffff;
+	display: block;
+	width: 300px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	margin: auto;
 	border-radius: 0px 0px 10px 10px;
+	text-decoration: none;
+	font-size: 1.5em;
 }
+.direccion, .Tel{
+	display: block;
+	margin-right: 15px;
+	text-align: right;
+}
+.direccion{
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+.Tel{
+	font-size: 1.8em;
+	margin-top: 10px;
+}
+.icon{
+	margin-top: 10px;
+	text-align: right;
+	margin-right: 15px;
+}
+.ico-fab{
+	width: 50px;
+	height: 30px;
+}
+
+
