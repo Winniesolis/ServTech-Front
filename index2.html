@@ -6,7 +6,6 @@
 </head>
 <body>
 	<header>
-		<!-- <div>prueba</div> -->
 		<img id="logo-princ" src="img/logo-ST.PNG">
 		<div id="banner-d"> 
 			<a id="btn-princ" href=""><span class="text-btn">ServTech</span></a>
@@ -19,7 +18,7 @@
 			</div>
 		</div>
 	</header>
-	<nav>
+	<nav class="menu"> 
 		<ul>
 			<li><a href="index.html">Inicio</a></li>
 			<li><a href="">Nosotros</a></li>
@@ -36,5 +35,20 @@
 	<footer id="footer">
 		<h1>pie de pagina</h1>
 	</footer>
+
+<script type="text/javascript">
+	alert('hola mundo');
+	$(document).ready(function(){
+	var altura = $('.menu').offset().top;
+	alert(altura);
+	$(window).on('scroll',function(){
+		if($(window).scrollTop() > altura){
+			$('.menu').addClass('menu-fixed');
+		}else{
+			$('.menu').removeClass('menu-fixed');
+		}
+	}
+});
+</script>
 </body>
 </html>
