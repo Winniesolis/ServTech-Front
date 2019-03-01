@@ -18,7 +18,7 @@
 			</div>
 		</div>
 	</header>
-	<nav>
+	<nav class="menu"> 
 		<ul>
 			<li><a href="index.html">Inicio</a></li>
 			<li><a href="">Nosotros</a></li>
@@ -27,6 +27,7 @@
 			<li><a href="">Galeria</a></li>
 			<li><a href="">Blog</a></li>
 			<li><a href="">Contacto</a></li>
+		</ul>
 	</nav>
 	<section id="contenedor">
 		<h1>seccion</h1>
@@ -34,5 +35,20 @@
 	<footer id="footer">
 		<h1>pie de pagina</h1>
 	</footer>
+
+<script type="text/javascript">
+	alert('hola mundo');
+	$(document).ready(function(){
+	var altura = $('.menu').offset().top;
+	alert(altura);
+	$(window).on('scroll',function(){
+		if($(window).scrollTop() > altura){
+			$('.menu').addClass('menu-fixed');
+		}else{
+			$('.menu').removeClass('menu-fixed');
+		}
+	}
+});
+</script>
 </body>
 </html>
