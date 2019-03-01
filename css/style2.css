@@ -16,7 +16,6 @@ COLORES:
 	margin: 0;
 }
 
-
 /*END Lineas generales*/
 body{
 	overflow-x: hidden;
@@ -28,37 +27,48 @@ header{
 	height: 190px;
 }
 nav{
-	background: #074f73;
+	background: transparent;
 	width: 100%;
 	height: 80px;
-	margin: auto;
+	
+}
+li{
+	height: 48px; 
+	background: #428bca;
+	-webkit-transform: skew(25deg);
+	-moz-transform: skew(25deg);
+	-ms-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	transform: skew(20deg);
+	padding-top: 13px;
+	text-align: center;
+	border-left: 2px #ffffff solid;
+	margin-left: -4px;
+	box-shadow: 0px 4px 3px rgba(0,0,0,.5);
 }
 nav ul{
 	margin: auto;
-	width: 98%;
-	height: 50px;
+	width: 1100px;
+	height: 70px;
 }
-li{
-	 width: 150px; 
-     height: 40px; 
-     background: #428bca;
-     -webkit-transform: skew(25deg);
-     -moz-transform: skew(25deg);
-     -ms-transform: skew(20deg);
-     -o-transform: skew(20deg);
-     transform: skew(20deg);
-	 padding-top: 23px;
-	 text-align: center;
-}
+
 nav ul li{
 	list-style: none;
 	display: inline-block;
 	font-size: 25px;
-	width: 120px;
+	width: 150px;
 }
 nav ul li a:link, a:visited{
 	text-decoration: none;
 	color: #ffffff;
+}
+li:hover{
+	background: #074f73;
+}
+.menu-fixed{
+	position: fixed;
+	z-index: 1000px;
+	top: 0;
 }
 section{
 	background: #EDF5E0;
@@ -84,9 +94,7 @@ footer{
 	left: 62%;
 	width: 500px;
 	height: 150px;
-	/*border: black 1px solid;*/
 }
-
 #btn-princ{
 	background: #074f73;
 	color: #ffffff;
@@ -128,8 +136,6 @@ footer{
 }
 .ico-fab{
 	height: 30px;
-	border: black 1px solid;
-	/*padding: -20px;*/
 }
 
 
