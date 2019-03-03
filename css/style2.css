@@ -44,7 +44,6 @@ li{
 	text-align: center;
 	border-left: 2px #ffffff solid;
 	margin-left: -4px;
-	box-shadow: 0px 4px 3px rgba(0,0,0,.5);
 }
 nav ul{
 	margin: auto;
@@ -67,8 +66,11 @@ li:hover{
 }
 .menu-fixed{
 	position: fixed;
-	z-index: 1000px;
+	z-index: 1000;
 	top: 0;
+	width: 100%;
+	max-width: 1000px;
+	box-shadow: 0px 4px 3px rgba(0,0,0,.5);
 }
 section{
 	background: #EDF5E0;
