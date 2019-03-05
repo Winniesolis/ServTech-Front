@@ -1,0 +1,240 @@
+
+COLORES:
+1) AZUL FUERTE: #074f73;
+2) AZUL BAJO: #06A3D3;
+3) VERDE AQUA: #3FDB9D;
+4) NEGRO: #000000;
+5) HUESO: #EDF5E0;
+6) BLANCO: #FFFFFF;
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/*Generales*/
+
+/* End Generales*/
+
+body{
+    background: #ecf0f1;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 330px;
+    transition: padding-top 0.5s ease;
+    margin-left: 0;
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    background: #074f73;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    /**degradado***/
+    background: rgba(7,172,223,1);
+    background: -moz-linear-gradient(left, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(7,172,223,1)), color-stop(12%, rgba(7,83,120,1)), color-stop(100%, rgba(7,83,120,1)));
+    background: -webkit-linear-gradient(left, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
+    background: -o-linear-gradient(left, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
+    background: -ms-linear-gradient(left, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
+    background: linear-gradient(to right, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07acdf', endColorstr='#075378', GradientType=1 );
+    /*end degradado*/
+
+}
+
+header a{
+    font-family: oranienbaum;
+    color: #EDF5E0;
+}
+
+header h1{
+    font-size: 42px;
+    color: white;
+    line-height: 230px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+header h1 i{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    background: #EDF5E0;
+
+}
+/*para poder editar el texto de el menu se debe de aplicar los estilos directamente a la etiqueta "a"*/
+/*li es el que tiene la forma de trapezoide*/
+li{
+    height: 200px;
+    width: 200px;
+    background: #06A3D3;
+    display: inline-block;
+    clip-path: polygon(0 0, 85% 0, 100% 27%, 15% 27%);
+    margin-left: -33px;
+    border-left: 1px solid white;
+
+}
+header nav a{
+    color: #000000;
+    display: inline-block;1
+    line-height: 1;
+    text-decoration: none;
+    font-family: oranienbaum;
+    font-size: 25px;
+
+}
+header nav li:hover{
+    background: #074f73;
+    color: #ffffff;
+}
+header nav li a:hover{
+    color: #EDF5E0;
+}
+nav{
+    text-align: center;
+}
+h2{
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 2;
+    color: #2c3e50;
+}
+p{
+    margin-bottom: 2rem;
+    line-height: 2;
+    color: #7f8c8d;
+}
+
+.wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body.sticky-header{
+    padding-top: 100px;
+}
+
+body.sticky-header header{
+    height: 60px;
+    background: #000000;
+}
+
+body.sticky-header header h1{
+    transform: scale(0, 0);
+}
+section{
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+footer{
+    background: url(../img/Footer/bg-footer.png);
+    height: 250px;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+}
+
+#logo-princ{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 200px;
+}
+#banner-d{
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    left: 62%;
+    width: 500px;
+    height: 150px;
+}
+#btn-princ{
+    background: #06A3D3;
+    color: #ffffff;
+    display: block;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.direccion, .Tel{
+    display: block;
+    margin-right: 15px;
+    text-align: right;
+}
+.direccion{
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.direccion:hover{
+    color: gray;
+}
+.Tel{
+    text-decoration: none;
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+.Tel:hover{
+    color:gray;
+}
+.icon{
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 15px;
+}
+.ico-fab{
+    height: 30px;
+    padding-left: 10px;
+}
+/*Footer*/
+#logo-footer{
+    margin-top: 55px;
+    margin-left: 30px;
+    width: 200px;
+}
+
+#alin-r{
+     position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    left: 62%;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+}
+footer h3{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 45px;
+    font-family: oranienbaum;
+}
+footer  h5{
+    margin-top: 10px;
+    font-size: 24px;
+    font-family: oranienbaum;
+    margin-bottom: 10px;
+}
+
+
+
+/*End Footer
