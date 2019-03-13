@@ -1,258 +1,304 @@
-/*Fonts*/
-/*Laila-Regular*/
-@import url('https://fonts.googleapis.com/css?family=Laila');
-/*end Fonts*/
 
+COLORES:
+1) AZUL FUERTE: #074f73;
+2) AZUL BAJO: #06A3D3;
+3) VERDE AQUA: #3FDB9D;
+4) NEGRO: #000000;
+5) HUESO: #EDF5E0;
+6) BLANCO: #FFFFFF;
+ */
 
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/*Generales*/
 
-
-
-
-
-
+/* End Generales*/
 
 body{
-	margin: 0px;
-	font-family: 'Montserrat', sans-serif;
-	overflow-x: hidden;
+    background: #ecf0f1;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 292px;
+    transition: padding-top 0.5s ease;
+    margin-left: 0;
 }
-h1{
-	margin: 0px;
-}
-img{
-	margin: 0px;
-}
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+header{
+    width: 100%;
+    height: 300px;
+    background: #074f73;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    /**degradado***/
+    background: rgba(7,172,223,1);
+    background: -moz-linear-gradient(left, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(7,172,223,1)), color-stop(12%, rgba(7,83,120,1)), color-stop(100%, rgba(7,83,120,1)));
+    background: -webkit-linear-gradient(left, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
+    background: -o-linear-gradient(left, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
+    background: -ms-linear-gradient(left, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
+    background: linear-gradient(to right, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07acdf', endColorstr='#075378', GradientType=1 );
+    /*end degradado*/
 
-
-.icon{
-	width: 24px;
-	height: 24px;
 }
-.btn-princ{
-	width: 300px;
-	height: 40px;
-	display: inline-block;
-	position: absolute;
-	left: 73%;
-	background: #009999;
-	text-decoration: none;
-	text-align: center;
-	border-radius: 0px 0px 10px 10px;
-}
-.text-btn{
-	color: #fff;
-	font-size: 25px;
-	padding-top: 5px;
 
+header a{
+    font-family: oranienbaum;
+    color: #EDF5E0;
+}
+
+header h1{
+    font-size: 42px;
+    color: white;
+    line-height: 230px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+header h1 i{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    /*background: #EDF5E0;*/
+
+}
+/*para poder editar el texto de el menu se debe de aplicar los estilos directamente a la etiqueta "a"*/
+/*li es el que tiene la forma de trapezoide*/
+li{
+    height: 200px;
+    width: 200px;
+    background: #06A3D3;
+    display: inline-block;
+    clip-path: polygon(0 0, 85% 0, 100% 27%, 15% 27%);
+    margin-left: -33px;
+    border-left: 1px solid white;
+
+}
+header nav a{
+    color: #000000;
+    display: inline-block;1
+    line-height: 1;
+    text-decoration: none;
+    font-family: oranienbaum;
+    font-size: 25px;
+
+}
+header nav li:hover{
+    background: #074f73;
+    color: #ffffff;
+}
+header nav li a:hover{
+    color: #EDF5E0;
+}
+nav{
+    text-align: center;
+}
+#img-banner{
+    width: 100%;
+    height: 480px;
+}
+#S_Mapa{
+    margin-top: -10px;
+    background: rgba(6,163,211,1);
+    background: -moz-linear-gradient(left, rgba(6,163,211,1) 0%, rgba(6,163,211,1) 14%, rgba(7,79,115,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(6,163,211,1)), color-stop(14%, rgba(6,163,211,1)), color-stop(100%, rgba(7,79,115,1)));
+    background: -webkit-linear-gradient(left, rgba(6,163,211,1) 0%, rgba(6,163,211,1) 14%, rgba(7,79,115,1) 100%);
+    background: -o-linear-gradient(left, rgba(6,163,211,1) 0%, rgba(6,163,211,1) 14%, rgba(7,79,115,1) 100%);
+    background: -ms-linear-gradient(left, rgba(6,163,211,1) 0%, rgba(6,163,211,1) 14%, rgba(7,79,115,1) 100%);
+    background: linear-gradient(to right, rgba(6,163,211,1) 0%, rgba(6,163,211,1) 14%, rgba(7,79,115,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06a3d3', endColorstr='#074f73', GradientType=1 );
+}
+#S_Mapa h4{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    font-family: oranienbaum;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 100px 0px 0px 20px;
+}
+#S_Mapa img{
+    width: 580px;
+    height: 280px;
+    margin: 50px 50px 50px 50px;
+}
+#sucursales{
+    width: 100%;
+    height: 300px;
+    border: black 1px solid;
+}
+.lin-v{
+    margin-left: 250px;
+    margin: 90px 0px 50px 50px;
+    height: 170px;
+}
+.ico-g{
+    display: inline-block;
+    vertical-align: top;
+    margin: 100px 0px 0px 80px;
+}
+#sucursales h5{
+    font-family: oranienbaum;
+    font-size: 1.9em;
+    display: inline-block;
+    vertical-align: top;
+    margin: 150px 0px 0px -110px;
+    color: #06A3D3;
+}
+#sucursales a{
+    font-family: oranienbaum;
+    font-size: 1.8em;
+    display: inline-block;
+    vertical-align: top;
+    margin: 200px 0px 0px -197px;
+    text-decoration: none;
+    color: #06A3D3;
+}
+#sucursales a:hover{
+    color: #074f73;
+}
+h2{
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 2;
+    color: #2c3e50;
+}
+p{
+    margin-bottom: 2rem;
+    line-height: 2;
+    color: #7f8c8d;
+}
+
+.wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body.sticky-header{
+    padding-top: 100px;
+}
+
+body.sticky-header header{
+    height: 60px;
+    background: #000000;
+}
+
+body.sticky-header header h1{
+    transform: scale(0, 0);
+}
+/*section{
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}*/
+footer{
+    background: url(../img/Footer/bg-footer.png);
+    height: 250px;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+}
+
+#logo-princ{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 200px;
+}
+#banner-d{
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    left: 62%;
+    width: 500px;
+    height: 150px;
+}
+#btn-princ{
+    background: #06A3D3;
+    color: #ffffff;
+    display: block;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.direccion, .Tel{
+    display: block;
+    margin-right: 15px;
+    text-align: right;
 }
 .direccion{
-	position: absolute;
-	left: 76%;
-	top: 40px;
-	text-align: right;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.direccion:hover{
+    color: gray;
 }
 .Tel{
-	position: absolute;
-	left: 83%;
-	text-decoration: none;
-	top: 80px;
-
+    text-decoration: none;
+    font-size: 1.8em;
+    margin-top: 10px;
 }
-.tel2{
-	font-size: 35px;
-	color: black;
-}
-.iconos{
-	position: absolute;
-	left: 90%;
-	top: 120px;
-}
-.ico-fab{
-	width:20px;
-	height: 20px;
+.Tel:hover{
+    color:gray;
 }
 .icon{
-	color: #009999;
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 15px;
 }
-/*banner*/
-.img-logo{
-	/*position: relative;*/
-	width: 250px;
-	height: 130px;
-	margin-top: 10px;
-
+.ico-fab{
+    height: 30px;
+    padding-left: 10px;
 }
-.header{
-	widows: 100%;
-	height: 150px;
-	background: #fff;
-}
-/*End banner*/
-
-/*Nav*/
-nav{
-	background-color: rgba(0,0,0,0.7);
-	height: 50px;
-	color: white;
-}
-ul{
-	margin: 0px;
-}
-nav ul{
-	text-align: center;
-	/*position: fixed;*/
-}
-
-li{
-	display: inline-block;
-	text-align: center;
-	margin: 5px;
-	letter-spacing: 2px;
-	
-}
-.active{
-	width: 70px;
-	background: #32dbc6;
-	padding: 10px;
-	color: black;
-}
-li:hover{
-	width: 70px;
-	background: #32dbc6;
-	padding: 10px;
-
-}
-/*End nav*/
-
-/*Video*/
-.video{
-	width: 100%;
-	height: 400px;
-	background: gray;
-
-}
-.video1{
-	width: 100%;
-	height: 400px;
-}
-.text-video{
-	position: relative;
-	top:50%;
-	text-align: center;
-
-}
-/*End video*/
-/* Sucursales*/
-.map-left{
-	width: 500px;
-	display: inline-block;
-	vertical-align: top;
-	margin-left: 40px;
-	margin-top: 100px;
-	text-align: center;
-}
-.text-map{
-	font-family: 'Laila', serif;
-	font-size: 2.5em;
-
-}
-
-.localizador{
-	width: 60px;
-	height: 80px;
-	text-align: center;
-	display: block;
-	margin: auto;
-}
-.content-suc{
-	width: 200px;
-	height: 195px;
-	border: black 1px solid;
-	display: inline-block;
-	margin-right: 50px;
-}
-#centrar{
-	width: 850px;
-	margin: auto;
-	border: black 1px solid;
-}
-.sucursales{
-	
-}
-.sec-merida{
-	display: inline-block;
-	margin-left: 100px;
-	vertical-align: top;
-}
-.suc-cancun {
-	display: inline-block;
-	margin-left: 200px;
-	vertical-align: top;
-}
-.suc-tab{
-	display: inline-block;
-	margin-left: 200px;
-	vertical-align: top;
-}
-
-
-.mapa{
-	width: 100%;
-	height: 400px;
-	background: #6c5b7b;
-}
-
-.maps{
-	display: inline-block;
-	margin-left: 200px;
-	vertical-align: top;
-
-}
-.mapa1{
-	height: 400px;
-
-}
-.sucursales{
-	width: 100%;
-	height: 200px;
-	background: #c06c84;
-}
-/*End Sucursales*/
-/*testimonios*/
-.seccion-testimonios{
-	width: 100%;
-	height: 400px;
-	
-}
-.img-test{
-	width: 49%;
-	height: 400px;
-	background: #f67280;
-	display: inline-block;
-	margin-right: 9px;
-}
-.testimonios{
-	width: 50%;
-	height: 400px;
-	background: #6c5b7b;
-	display: inline-block;
-	vertical-align: top;
-
-}
-/*End testimonios*/
-/*Proveedores*/
-.proveedores{
-	width: 100%;
-	height: 200px;
-	background: #35477d;
-}
-/*End Proveedores*/
 /*Footer*/
-.footer{
-	width: 100%;
-	height: 300px;
-	background: #f68787;
+#logo-footer{
+    margin-top: 55px;
+    margin-left: 30px;
+    width: 200px;
 }
+
+#alin-r{
+     position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    left: 62%;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+}
+footer h3{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 45px;
+    font-family: oranienbaum;
+}
+footer  h5{
+    margin-top: 10px;
+    font-size: 24px;
+    font-family: oranienbaum;
+    margin-bottom: 10px;
+}
+
+
+
 /*End Footer
