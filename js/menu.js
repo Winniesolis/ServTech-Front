@@ -1,11 +1,10 @@
-$(document).ready(function(){
-	var altura = $('.menu').offset().top;
-	alert(altura);
-	$(window).on('scroll',function(){
-		if($(window).scrollTop() > altura){
-			$('.menu').addClass('menu-fixed');
-		}else{
-			$('.menu').removeClass('menu-fixed');
-		}
-	}
-});
+$(function(){
+    $(window).scroll(function(){
+        var winTop = $(window).scrollTop();
+        if(winTop >= 30){
+            $("body").addClass("sticky-header");
+        }else{
+            $("body").removeClass("sticky-header");
+        }
+    })
+})
