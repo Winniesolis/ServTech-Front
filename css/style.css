@@ -1,5 +1,5 @@
 
-COLORES:
+/*COLORES:
 1) AZUL FUERTE: #074f73;
 2) AZUL BAJO: #06A3D3;
 3) VERDE AQUA: #3FDB9D;
@@ -7,7 +7,7 @@ COLORES:
 5) HUESO: #EDF5E0;
 6) BLANCO: #FFFFFF;
  */
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 *{
     margin: 0;
     padding: 0;
@@ -36,23 +36,20 @@ header{
     overflow: hidden;
     transition: all 0.5s ease;
     /**degradado***/
-    background: rgba(7,172,223,1);
+   /* background: rgba(7,172,223,1);
     background: -moz-linear-gradient(left, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(7,172,223,1)), color-stop(12%, rgba(7,83,120,1)), color-stop(100%, rgba(7,83,120,1)));
     background: -webkit-linear-gradient(left, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
     background: -o-linear-gradient(left, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
     background: -ms-linear-gradient(left, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
     background: linear-gradient(to right, rgba(7,172,223,1) 0%, rgba(7,83,120,1) 12%, rgba(7,83,120,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07acdf', endColorstr='#075378', GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07acdf', endColorstr='#075378', GradientType=1 );*/
     /*end degradado*/
-
 }
-
 header a{
     font-family: oranienbaum;
     color: #EDF5E0;
 }
-
 header h1{
     font-size: 42px;
     color: white;
@@ -60,12 +57,10 @@ header h1{
     font-weight: 300;
     transition: all 0.3s ease;
 }
-
 header h1 i{
     font-weight: bold;
     text-transform: uppercase;
 }
-
 header nav{
     position: absolute;
     bottom: 0;
@@ -73,7 +68,6 @@ header nav{
     line-height: 60px;
     width: 100%;
     /*background: #EDF5E0;*/
-
 }
 /*para poder editar el texto de el menu se debe de aplicar los estilos directamente a la etiqueta "a"*/
 /*li es el que tiene la forma de trapezoide*/
@@ -85,7 +79,6 @@ li{
     clip-path: polygon(0 0, 85% 0, 100% 27%, 15% 27%);
     margin-left: -33px;
     border-left: 1px solid white;
-
 }
 header nav a{
     color: #000000;
@@ -94,7 +87,6 @@ header nav a{
     text-decoration: none;
     font-family: oranienbaum;
     font-size: 25px;
-
 }
 header nav li:hover{
     background: #074f73;
@@ -103,8 +95,22 @@ header nav li:hover{
 header nav li a:hover{
     color: #EDF5E0;
 }
+
+header img#logo-princ{
+    margin-top: -215px;
+    margin-left: -15px;
+    width: 1045px;
+    float: left;
+}
+header div.icon img{
+    height: 30px;
+    padding-left: 10px;
+}
 nav{
     text-align: center;
+}
+#S_Mapa, p {
+    font-family: 'Montserrat', sans-serif;
 }
 #img-banner{
     width: 100%;
@@ -125,7 +131,6 @@ nav{
     display: inline-block;
     vertical-align: top;
     width: 45%;
-    font-family: oranienbaum;
     font-size: 1.3em;
     text-align: center;
     margin: 100px 0px 0px 20px;
@@ -136,9 +141,11 @@ nav{
     margin: 50px 50px 50px 50px;
 }
 #sucursales{
-    width: 100%;
+    width: 30%;
     height: 300px;
-    border: black 1px solid;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 40px;
 }
 .lin-v{
     margin-left: 250px;
@@ -163,13 +170,38 @@ nav{
     font-size: 1.8em;
     display: inline-block;
     vertical-align: top;
-    margin: 200px 0px 0px -197px;
+    margin: -118px 0px 0px 65px;
     text-decoration: none;
     color: #06A3D3;
 }
 #sucursales a:hover{
     color: #074f73;
 }
+section div{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+section div img{
+    width: 97%;
+}
+section div blockquote{
+    margin-top: 20px;
+    text-align: center;
+    background: transparent url(../img/blockquote.png) no-repeat scroll 10px 10px;
+    padding: 60px 0px 80px 53px;
+}
+#provedores img{
+    width: 280px;
+    height: 100px;
+    margin: 0px 50px 50px 20px;
+}
+#dell{
+     width: 120px !important;
+    height: 110px !important;
+    margin-left: 80px !important;
+}
+/**/
 h2{
     font-size: 34px;
     text-transform: uppercase;
@@ -182,21 +214,20 @@ p{
     line-height: 2;
     color: #7f8c8d;
 }
-
 .wrapper{
     max-width: 800px;
     margin: 0 auto;
 }
-
 body.sticky-header{
     padding-top: 100px;
 }
-
 body.sticky-header header{
     height: 60px;
-    background: #000000;
+    background: transparent;
 }
-
+.display-none #logo-princ{ 
+    display: none;
+ }
 body.sticky-header header h1{
     transform: scale(0, 0);
 }
@@ -214,11 +245,6 @@ footer{
     margin-left: 0px;
 }
 
-#logo-princ{
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 200px;
-}
 #banner-d{
     position: absolute;
     display: inline-block;
@@ -266,17 +292,13 @@ footer{
     text-align: right;
     margin-right: 15px;
 }
-.ico-fab{
-    height: 30px;
-    padding-left: 10px;
-}
+
 /*Footer*/
 #logo-footer{
     margin-top: 55px;
     margin-left: 30px;
     width: 200px;
 }
-
 #alin-r{
      position: absolute;
     display: inline-block;
@@ -298,7 +320,4 @@ footer  h5{
     font-family: oranienbaum;
     margin-bottom: 10px;
 }
-
-
-
 /*End Footer
