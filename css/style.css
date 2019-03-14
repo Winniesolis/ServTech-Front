@@ -321,3 +321,31 @@ footer  h5{
     margin-bottom: 10px;
 }
 /*End Footer
+
+/*NOSOTROS*/
+#nosotros{
+}
+#nosotros img{
+    width: 140%;
+    height: 500px;
+    margin-top: -10px;
+    margin-left: -50px !important;
+    display: inline-block;
+}
+#nosotros div p{
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+
+
+
+
+/*NOSOTROS*/
+
+
+
+
+
