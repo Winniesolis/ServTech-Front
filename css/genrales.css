@@ -1,54 +1,7 @@
 
-.ge-1{
-	width: 8.33333333%;
-	display: inline-block;
+.disp--none{
+	display: none;
 }
-.ge-2{
-	width: 16.66666667%;
-	display: inline-block;
-	vertical-align: top;
-}
-.ge-3{
-	width: 25%;
-	display: inline-block;
-}
-.ge-4{
-	width: 33.33333333%;
-	display: inline-block;
-}
-.ge-5{
-	width: 41.66666667%;
-	display: inline-block;
-}
-.ge-6{
-	width: 50%;
-	display: inline-block;
-	vertical-align: top;
-	position: relative;
-	height: 150px;
-	border: black 1px solid;
-}
-.ge-7{
-	width: 58.33333333%;
-	display: inline-block;
-}
-.ge-8{
-	width: 66.6666667%;
-	display: inline-block;
-}
-.ge-9{
-	width: 75%;
-	display: inline-block;
-}
-.ge-10{
-	width:83.33333333%;
-	display: inline-block;
-}
-.ge-11{
-	width: 91.66666667;
-	display: inline-block;
-}
-.ge-12{
-	width: 100%;
-	display: inline-block;
+.display--block{
+	display: block;
 }

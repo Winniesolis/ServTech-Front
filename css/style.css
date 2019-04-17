@@ -26,12 +26,12 @@
 body{
     background: #ecf0f1;
     font-family: 'Roboto', sans-serif;
-    padding-top: 242px;
+    /*padding-top: 242px;*/
     /*transition: padding-top 0.5s ease;*/
     margin-left: 0;
 }
 
-header{
+/*header{
     width: 100%;
     height: 250px;
     background: #074f73;
@@ -63,8 +63,6 @@ header nav{
     width: 100%;
     z-index: 99;
 }
-/*para poder editar el texto de el menu se debe de aplicar los estilos directamente a la etiqueta "a"*/
-/*li es el que tiene la forma de trapezoide*/
 nav li{
     height: 200px;
     width: 200px;
@@ -91,7 +89,6 @@ header nav li a:hover{
     color: #EDF5E0;
 }
 header img#logo-princ{
-    /*margin-top: -215px;*/
     margin-left: -15px;
     width: 1364px;
     float: left;
@@ -102,6 +99,87 @@ header div.icon img{
 }
 nav{
     text-align: center;
+}*/
+
+/*nav2*/
+header{
+    width: 100%;
+    height: 90px;
+    display: fixed;
+    background: rgba(6,163,211,1);
+    background: -moz-linear-gradient(left, rgba(6,163,211,1) 0%, rgba(6,163,211,1) 14%, rgba(7,79,115,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(6,163,211,1)), color-stop(14%, rgba(6,163,211,1)), color-stop(100%, rgba(7,79,115,1)));
+    background: -webkit-linear-gradient(left, rgba(6,163,211,1) 0%, rgba(6,163,211,1) 14%, rgba(7,79,115,1) 100%);
+    background: -o-linear-gradient(left, rgba(6,163,211,1) 0%, rgba(6,163,211,1) 14%, rgba(7,79,115,1) 100%);
+    background: -ms-linear-gradient(left, rgba(6,163,211,1) 0%, rgba(6,163,211,1) 14%, rgba(7,79,115,1) 100%);
+    background: linear-gradient(to right, rgba(6,163,211,1) 0%, rgba(6,163,211,1) 14%, rgba(7,79,115,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06a3d3', endColorstr='#074f73', GradientType=1 );
+}
+a{
+    text-decoration: none;
+}
+header img{
+    width: : 100%;
+    height: 80%;
+    margin: 10px 0px 0px 10px;
+    display: inline-block;
+}
+header nav{
+    display: inline-block;
+    vertical-align: top; 
+    margin-top: 30px;
+    margin-left: 15%;
+}
+header nav a{
+    color: #ffffff;
+    font-family: oranienbaum;
+    font-size: 25px;
+    margin-left: 20px;
+    width: 70px;
+    height: 10px;
+    border-bottom: #3FDB9D 2px solid;
+}
+header nav a:hover{
+    color: #3FDB9D;
+    border-bottom: #000000 2px solid;
+}
+header div{
+    display: inline-block;
+    vertical-align: top;
+    margin: 25px 0px 0px 2%;
+}
+header div a{
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 30px;
+}
+header div a:hover{
+    color: #3FDB9D;
+}
+.active{
+    background: rgba(0,0,0,.5);
+    /*border-radius: 10px;*/
+    padding: 6px 10px;
+    border: none;
+    border-radius: 7px;
+}
+}
+/*nav2*/
+.log-car section{
+    background: #06A3D3;
+    position: relative;
+    top: 14px;
+    left: -150px;
+}
+.log-car section p{
+    font-size: 15px;
+    width: 221px;
+    text-align: center;
+    color: #074f73;
+}
+.log-car section p a{
+    font-size: 12px;
+    margin: 0px;
 }
 #S_Mapa, p {
     font-family: 'Montserrat', sans-serif;
@@ -176,10 +254,6 @@ section div{
     width: 48%;
     vertical-align: top;
 }
-/*section div img{
-    width: 97%;
-}*/
-
 /*slider1*/
 .reviews div{
     display: inline-block;
@@ -851,9 +925,31 @@ button:hover {
     background: url(../img/baner-contacto2.jpg);
     background-size: cover !important;
     position: relative;
-    margin-top: -91px;
     z-index: 5;
     margin-bottom: 50px;
+}
+.img-log2{
+    width: 1125px;
+    height: 575px;
+    margin: auto;
+    background: url(../img/baner-contacto2.jpg);
+    background-size: cover !important;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 50px;
+    top: -587px;
+}
+fieldset{
+    color: #ffffff;
+    font-size: 30px;
+}
+form fieldset a{
+    color: #ffffff;
+    font-size: 25px;
+}
+form fieldset a:hover{
+    color: #3FDB9D;
+ 
 }
 /*LOGIN*/
 
