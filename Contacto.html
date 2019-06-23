@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>ServTech | Contacto</title>
+    <title>ServTech | Blog</title>
+    <link rel="icon" href="img/ico-pest2.ico" />
     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body>
-     <header>
-        <img src="img/logo.PNG">
+
+<body id="blog">
+    <header>
+        <img src="img/lg1/log1.png">
         <nav>
             <a href="index2.php">Inicio</a>
             <a href="Nosotros.html">Nosotros</a>
             <a href="Servicios.html">Servicios</a>
             <a href="Soluciones.html">Productos</a>
             <a href="Galeria.html">Galeria</a>
-            <a href="Blog.html">Blog</a>
-            <a href="Contacto.html" class="active">Contacto</a>
+            <a href="Blog.html" class="active">Blog</a>
+            <a href="Contacto.html">Contacto</a>
         </nav>
-
         <div class="log-car">
-            <a href="" onclick="abrirlogin()"><i class="far fa-user"></i></a>
-            <a href="" onclick="abrirlogin()"><i class="fas fa-shopping-cart"></i></a>
-            <section class="" id="sec-log" >
-                <p>
-                    <a href="login.html"  id="inciarS">Iniciar Sesión</a>&nbsp;&nbsp; o &nbsp;&nbsp;
-                    <a href="">Registrarse</a>
-                </p>
+            <section class="usuario">
+                <ul>
+                    <li><a href=""><i class="far fa-user"></i></a>
+                        <ul class="sub-nav">
+                            <li><a href="login.php">Iniciar sesion</a></li>
+                            <li class="lia"><a href="">O</a></li>
+                            <li><a href="sing-up.php">Registrarse</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
+            <a href="" onclick="abrirlogin()"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
- <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.661533565976!2d-89.59132228575584!3d20.96610329529176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56711dbb750eed%3A0x64f85a4cd67b6331!2sCTM!5e0!3m2!1sen!2smx!4v1552571104081" width="1510" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <section>
+        <section class="content-cont">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.661533565976!2d-89.59132228575584!3d20.96610329529176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56711dbb750eed%3A0x64f85a4cd67b6331!2sCTM!5e0!3m2!1sen!2smx!4v1552571104081"
+                width="1349" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-    <section class="cont-contac">
-        <section class="img-cont">
-          <form>
-            <fieldset>
-                <legend> <h1>Contacto</h1> </legend>
-                <img src="C:\Users\admin\Documents\8 Vo">
-                <br>
-                <input name="Nombre" type="text" placeholder="Introduce tu Nombre" id="Nombre"><br><br>
-                <input name="Email" type="Email" placeholder="Intruduce tu Email" id="Email"><br><br>
-                <input name="Telefono" type="text" placeholder="Intruduce tu Telefono" id="Telefono"> <br><br>
-                <input type="date" name="Edad" title="2 digitos"><br></br>
-                <textarea name="Mensaje" id="Mensaje" cols="10" rows="10" placeholder="Mensaje"></textarea><br><br>
-                <button type="submit">Enviar</button>
-            </fieldset>
-        </form>
-    </section>
-       </section>
-    <footer id="footer">
+            <section class="cont-contac">
+                <section class="img-cont">
+                    <form action="enviar_cont.php" name="contacto" method="post">
+                        <fieldset>
+                            <legend>
+                                <h1>Contacto</h1>
+                            </legend>
+                            <!-- <img src="C:\Users\admin\Documents\8 Vo"> -->
+                            <br>
+                            <input name="Nombre" type="text" placeholder="Introduce tu Nombre" id="nombre"
+                                required><br><br>
+                            <input name="Email" type="Email" placeholder="Intruduce tu Email" id="email"
+                                required><br><br>
+                            <input name="Asunto" type="text" placeholder="Asunto" id="asunto" required> <br><br>
+                            <!-- <input type="date" id="fecha" title="2 digitos" required><br></br> -->
+                            <textarea name="Mensaje" id="mensaje" cols="10" rows="10" placeholder="Mensaje"
+                                required></textarea><br><br>
+                            <input type="submit" id="enviar" name="enviar" value="Enviar">
+                        </fieldset>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <footer id="footer">
 
-        <img id="logo-footer" src="img/logo-ST.PNG">
-        <div id="alin-r"> 
-            <h3 class="">Contacto</h3>
-            <img class="" src="img/Footer/linea-ft.png">
-            <h5 class="">Calle 63B #178C Por 2 y 4 Col: Cortés Sarmiento.</h5>
-            <h5 class="">Tel: 9-52-68-85.</h5>
-             <div class="">
-                    <a href="" ><img class="ico-fab" src="img/Footer/iconos/ico-fb.png"></a>
-                    <a href="" ><img class="ico-fab" src="img/Footer/iconos/ico-google.png"></a>
-                    <a href="" ><img class="ico-fab" src="img/Footer/iconos/ico-insta.png"></a>
-             </div>
-        </div>
-    </footer>
+            <img id="logo-footer" src="img/logo-ST.PNG">
+            <div id="alin-r">
+                <h3 class="">Contacto</h3>
+                <img class="" src="img/Footer/linea-ft.png">
+                <h5 class="">Calle 63B #178C Por 2 y 4 Col: Cortés Sarmiento.</h5>
+                <h5 class="">Tel: 9-52-68-85.</h5>
+                <div class="">
+                    <a href=""><img class="ico-fab" src="img/Footer/iconos/ico-fb.png"></a>
+                    <a href=""><img class="ico-fab" src="img/Footer/iconos/ico-google.png"></a>
+                    <a href=""><img class="ico-fab" src="img/Footer/iconos/ico-insta.png"></a>
+                </div>
+            </div>
+        </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
-    <script src="js/menu.js"></script>  
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/menu.js"></script>
 </body>
+
 </html>
