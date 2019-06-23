@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>ServTech | Inicio</title>
+    <link rel="icon" href="img/lg1/ico-vent.ico" />
+
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/genrales.css"> -->
 </head>
+
 <body>
-     <header>
-        <img src="img/logo.PNG">
+    <header>
+        <img src="img/lg1/log1.png">
         <nav>
             <a href="index2.php" class="active">Inicio</a>
             <a href="Nosotros.html">Nosotros</a>
@@ -18,53 +22,61 @@
             <a href="Blog.html">Blog</a>
             <a href="Contacto.html">Contacto</a>
         </nav>
-
         <div class="log-car">
-            <a href="" onclick="abrirlogin()"><i class="far fa-user"></i></a>
-            <a href="" onclick="abrirlogin()"><i class="fas fa-shopping-cart"></i></a>
-            <section class="" id="sec-log" >
-                <p>
-                    <a href="login.html"  id="inciarS">Iniciar Sesión</a>&nbsp;&nbsp; o &nbsp;&nbsp;
-                    <a href="">Registrarse</a>
-                </p>
+            <section class="usuario">
+                <ul>
+                    <li><a href=""><i class="far fa-user"></i></a>
+                        <ul class="sub-nav">
+                            <li><a href="login.php">Iniciar sesion</a></li>
+                            <li class="lia"><a href="">O</a></li>
+                            <li><a href="sing-up.php">Registrarse</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
+            <a href="" onclick="abrirlogin()"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </header>
-    <img id="img-banner" src="img/cableado-estructurado.jpg">
+    <img id="img-banner" src="img/banner1.jpg">
+    <div class="img-banner">
+        <img src="img/banner3.png">
+
+        <h1></h1>
+    </div>
     <section id="S_Mapa">
-        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+        <h4>
+            Servtech cuenta con 3 sucursales las cuales son <span class="cb">Mérida, Yucatán</span>, <span class="cb">Cancun
+                QuintanaRoo</span> y <span class="cb">Villahermosa, Tabasco</span>,
+            de igual forma gracias a que contamos con Freelances podemos decir que nos encontramos en cualquier estado
+            de la republica mexicana, contactanos y recibiras apoyo de nuestro equipo mas cercano de donde te encuentres.
+        </h4>
         <img class="img-mapa" src="img/index/1200px-Mexico_map,_MX-SIN.svg.png">
-     </section>
-     <section>
-         <section id="sucursales">
-             <img class="lin-v" src="img/index/linea-v.png">
-                <img class="ico-g" src="img/iconos/google-azul.png">
-                <h5>Mérida, Yucatán</h5>
-                <a id="merida" href="">Tel: 9-52-58-65</a>
-         </section>
-         <section id="sucursales">
-             <img class="lin-v" src="img/index/linea-v.png">
-                <img class="ico-g" src="img/iconos/google-azul.png">
-                <h5>Villahermosa, Tabasco</h5>
-                <a id="tabasco" href="">Tel: 9-52-58-65</a>
-         </section>
-         <section id="sucursales">
-             <img class="lin-v" src="img/index/linea-v.png">
-                <img class="ico-g" src="img/iconos/google-azul.png">
-                <h5>Cancún, QuintanaRoo</h5>
-                <a id="cancun" href="">Tel: 9-52-58-65</a>
-         </section>
-     </section>
-     <section class="reviews">
-         <div>
-             <img src="img/index/consultoria-1.jpg">
-         </div>
-         <div class="slider2">
+    </section>
+    <section>
+        <section id="sucursales">
+            <img class="lin-v" src="img/index/linea-v.png">
+            <img class="ico-g" src="img/iconos/google-azul.png">
+            <h5>Mérida, Yucatán</h5>
+            <a id="merida" href="">Tel: 9-52-58-65</a>
+        </section>
+        <section id="sucursales">
+            <img class="lin-v" src="img/index/linea-v.png">
+            <img class="ico-g" src="img/iconos/google-azul.png">
+            <h5>Villahermosa, Tabasco</h5>
+            <a id="tabasco" href="">Tel: 9-52-58-65</a>
+        </section>
+        <section id="sucursales">
+            <img class="lin-v" src="img/index/linea-v.png">
+            <img class="ico-g" src="img/iconos/google-azul.png">
+            <h5>Cancún, QuintanaRoo</h5>
+            <a id="cancun" href="">Tel: 9-52-58-65</a>
+        </section>
+    </section>
+    <section class="reviews">
+        <div>
+            <img src="img/index/consultoria-1.jpg">
+        </div>
+        <div class="slider2">
             <ul>
                 <li>
                     <p>
@@ -92,8 +104,8 @@
                 </li>
             </ul>
         </div>
-     </section>
-       
+    </section>
+
     <div class="slider">
         <div class="slide-track">
             <div class="slide">
@@ -142,20 +154,21 @@
     </div>
     <footer id="footer">
         <img id="logo-footer" src="img/logo-ST.PNG">
-        <div id="alin-r"> 
+        <div id="alin-r">
             <h3>Contacto</h3>
             <img src="img/Footer/linea-ft.png">
             <h5>Calle 63B #178C Por 2 y 4 Col: Cortés Sarmiento.</h5>
             <h5>Tel: 9-52-96-85.</h5>
             <div>
-                    <a href="" ><img class="ico-fab" src="img/Footer/iconos/ico-fb.png"></a>
-                    <a href="" ><img class="ico-fab" src="img/Footer/iconos/ico-google.png"></a>
-                    <a href="" ><img class="ico-fab" src="img/Footer/iconos/ico-insta.png"></a>
+                <a href=""><img class="ico-fab" src="img/Footer/iconos/ico-fb.png"></a>
+                <a href=""><img class="ico-fab" src="img/Footer/iconos/ico-google.png"></a>
+                <a href=""><img class="ico-fab" src="img/Footer/iconos/ico-insta.png"></a>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
-    <script src="js/menu.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/menu.js"></script>
 </body>
+
 </html>
